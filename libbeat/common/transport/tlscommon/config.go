@@ -31,6 +31,7 @@ type Config struct {
 	CipherSuites     []tlsCipherSuite        `config:"cipher_suites" yaml:"cipher_suites,omitempty"`
 	CAs              []string                `config:"certificate_authorities" yaml:"certificate_authorities,omitempty"`
 	Certificate      CertificateConfig       `config:",inline" yaml:",inline"`
+	ServerName       string                  `config:"server_name" yaml:"server_name,omitempty"`
 	CurveTypes       []tlsCurveType          `config:"curve_types" yaml:"curve_types,omitempty"`
 	Renegotiation    tlsRenegotiationSupport `config:"renegotiation" yaml:"renegotiation"`
 }
@@ -84,6 +85,7 @@ func LoadTLSConfig(config *Config) (*TLSConfig, error) {
 		Versions:         config.Versions,
 		Verification:     config.VerificationMode,
 		Certificates:     certs,
+		ServerName:       config.ServerName,
 		RootCAs:          cas,
 		CipherSuites:     cipherSuites,
 		CurvePreferences: curves,

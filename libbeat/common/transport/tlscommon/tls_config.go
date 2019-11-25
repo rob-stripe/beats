@@ -49,6 +49,12 @@ type TLSConfig struct {
 	// on MS Windows).
 	ClientCAs *x509.CertPool
 
+	// ServerName is used to verify the hostname on the returned
+	// certificates unless InsecureSkipVerify is given. It is also included
+	// in the client's handshake to support virtual hosting unless it is
+	// an IP address.
+	ServerName string
+
 	// List of supported cipher suites. If nil, a default list provided by the
 	// implementation will be used.
 	CipherSuites []uint16
@@ -79,8 +85,19 @@ func (c *TLSConfig) BuildModuleConfig(host string) *tls.Config {
 		logp.Warn("SSL/TLS verifications disabled.")
 	}
 
+	var serverName string
+	if c.ServerName != "" {
+		serverName = c.ServerName
+		logp.Info("Using server_name value from config as ServerName in tls.Config: %s", serverName)
+	} else if host != "" {
+		serverName = host
+		logp.Info("Using `host` arg passed into BuildModuleConfig as ServerName in tls.Config: %s", serverName)
+	} else {
+		logp.Info("No ServerName given in either config or as arg to BuildModuleConfig, using empty string in tls.Config")
+	}
+
 	return &tls.Config{
-		ServerName:         host,
+		ServerName:         serverName,
 		MinVersion:         minVersion,
 		MaxVersion:         maxVersion,
 		Certificates:       c.Certificates,
