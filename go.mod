@@ -43,7 +43,7 @@ require (
 	github.com/elastic/go-libaudit v0.4.0
 	github.com/elastic/go-lookslike v0.3.0
 	github.com/elastic/go-lumber v0.1.0
-	github.com/elastic/go-perf v0.0.0-20190822174212-9bc9b58a3de9
+	github.com/elastic/go-perf v0.0.0-20191212140718-9c656876f595
 	github.com/elastic/go-seccomp-bpf v1.1.0
 	github.com/elastic/go-structform v0.0.6
 	github.com/elastic/go-sysinfo v1.1.1
@@ -172,6 +172,7 @@ replace (
 	github.com/theckman/go-flock => github.com/theckman/go-flock v0.0.0-20180124011928-b139a2487364
 	github.com/vmware/govmomi => github.com/vmware/govmomi v0.0.0-20170802214208-2cad15190b41
 	github.com/yuin/gopher-lua => github.com/yuin/gopher-lua v0.0.0-20170403160031-b402f3114ec7
+	go.opencensus.io => go.opencensus.io v0.0.0-20190529191040-9c377598961b
 	go.uber.org/atomic => go.uber.org/atomic v0.0.0-20171114204401-8474b86a5a6f
 	go.uber.org/multierr => go.uber.org/multierr v0.0.0-20170829224307-fb7d312c2c04
 	go.uber.org/zap => go.uber.org/zap v0.0.0-20170925195302-35aad584952c
@@ -179,10 +180,9 @@ replace (
 	golang.org/x/net => golang.org/x/net v0.0.0-20180120141536-44b7c21cbf19
 	golang.org/x/net/publicsuffix => golang.org/x/net/publicsuffix v0.0.0-20180120141536-44b7c21cbf19
 	golang.org/x/oauth2 => golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
-	golang.org/x/sys => golang.org/x/sys v0.0.0-20190712062909-fae7ac547cb7
+	golang.org/x/sys => golang.org/x/sys v0.0.0-20191210023423-ac6580df4449
 	golang.org/x/text => golang.org/x/text v0.0.0-20180208041248-4e4a3210bb54
 	golang.org/x/time => golang.org/x/time v0.0.0-20180314180208-26559e0f760e
-	golang.org/x/tools => golang.org/x/tools v0.0.0-20180826164753-156d532d4f67
 	google.golang.org/api => google.golang.org/api v0.0.0-20190624191751-02490b97dff7
 	google.golang.org/genproto => google.golang.org/genproto v0.0.0-20190611190212-a7e196e89fd3
 	gopkg.in/goracle.v2 => gopkg.in/goracle.v2 v2.0.0-20190530184054-3222d7159b45
