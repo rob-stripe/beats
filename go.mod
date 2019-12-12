@@ -7,7 +7,6 @@ require (
 	cloud.google.com/go v0.38.0
 	github.com/Azure/azure-sdk-for-go v0.0.0-20190805171550-a629ae7873bf
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
-	github.com/Azure/go-autorest v11.1.2+incompatible
 	github.com/Azure/go-autorest/autorest v0.9.3 // indirect
 	github.com/Azure/go-autorest/autorest/azure/auth v0.4.1
 	github.com/Azure/go-autorest/autorest/date v0.2.0
@@ -130,6 +129,7 @@ replace (
 	cloud.google.com/go => cloud.google.com/go v0.40.0
 	github.com/Azure/azure-sdk-for-go => github.com/azure/azure-sdk-for-go v0.0.0-20190805171550-a629ae7873bf
 	github.com/Azure/go-autorest => github.com/Azure/go-autorest v0.0.0-20190801152139-ba1147dc57f9
+	github.com/Microsoft/go-winio => github.com/Microsoft/go-winio v0.0.0-20190806195904-6c72808b5590
 	github.com/Shopify/sarama => github.com/elastic/sarama v0.0.0-20191122160421-355d120d0970
 	github.com/aws/aws-sdk-go-v2 => github.com/aws/aws-sdk-go-v2 v0.0.0-20190528215127-098e15df3044
 	github.com/awslabs/goformation => github.com/ph/goformation v0.0.0-20181029154158-c5f655c41370

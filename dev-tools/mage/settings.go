@@ -561,7 +561,12 @@ var (
 // import path and the current directory's import path.
 func GetProjectRepoInfo() (*ProjectRepoInfo, error) {
 	repoInfoOnce.Do(func() {
-		repoInfoValue, repoInfoErr = getProjectRepoInfo()
+		if os.Getenv("GOPATH") != "" {
+			repoInfoValue, repoInfoErr = getProjectRepoInfo()
+		} else {
+			repoInfoValue = nil
+			repoInfoErr = fmt.Errorf("not setting GOPATH is not supported")
+		}
 	})
 
 	return repoInfoValue, repoInfoErr
