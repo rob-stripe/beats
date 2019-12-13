@@ -25,7 +25,7 @@ import (
 	_ "golang.org/x/tools/go/loader"
 	_ "golang.org/x/tools/imports"
 
-	_ "github.com/x/tools/cmd/goimports"
+	_ "golang.org/x/tools/cmd/goimports"
 
 	_ "github.com/elastic/go-licenser"
 )
