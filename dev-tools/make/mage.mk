@@ -7,7 +7,9 @@ export MAGE_IMPORT_PATH
 mage:
 ifndef MAGE_PRESENT
 	@echo Installing mage $(MAGE_VERSION) from vendor dir.
-	@go install -ldflags="-X $(MAGE_IMPORT_PATH)/mage.gitTag=$(MAGE_VERSION)" ${MAGE_IMPORT_PATH}
+	@go install -mod=vendor -ldflags="-X $(MAGE_IMPORT_PATH)/mage.gitTag=$(MAGE_VERSION)" ${MAGE_IMPORT_PATH}/sh
+	@go install -mod=vendor -ldflags="-X $(MAGE_IMPORT_PATH)/mage.gitTag=$(MAGE_VERSION)" ${MAGE_IMPORT_PATH}/mg
+	@go install -mod=vendor -ldflags="-X $(MAGE_IMPORT_PATH)/mage.gitTag=$(MAGE_VERSION)" ${MAGE_IMPORT_PATH}/target
 	@-mage -clean
 endif
 	@true
