@@ -27,5 +27,7 @@ import (
 
 	_ "golang.org/x/tools/cmd/goimports"
 
+	_ "github.com/magefile/mage"
+
 	_ "github.com/elastic/go-licenser"
 )
