@@ -41,6 +41,7 @@ require (
 	github.com/dustin/go-humanize v0.0.0-20170228161531-259d2a102b87
 	github.com/elastic/ecs v1.2.0
 	github.com/elastic/go-libaudit v0.4.0
+	github.com/elastic/go-licenser v0.0.0-20180830075835-2b2abd4ee9b5
 	github.com/elastic/go-lookslike v0.3.0
 	github.com/elastic/go-lumber v0.1.0
 	github.com/elastic/go-perf v0.0.0-20191212140718-9c656876f595
@@ -105,23 +106,21 @@ require (
 	go.uber.org/zap v1.11.0
 	golang.org/x/crypto v0.0.0-20191206172530-e9b2fee46413
 	golang.org/x/net v0.0.0-20191004110552-13f9640d40b9
-	golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6 // indirect
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
 	golang.org/x/sys v0.0.0-20191025021431-6c3a3bfe00ae
 	golang.org/x/text v0.3.2
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0
 	golang.org/x/tools v0.0.0-20190506145303-2d16b83fe98c
-	google.golang.org/api v0.14.0
-	google.golang.org/genproto v0.0.0-20191205163323-51378566eb59 // indirect
+	google.golang.org/api v0.6.0
 	gopkg.in/goracle.v2 v2.0.0-20190530184054-3222d7159b45
 	gopkg.in/inf.v0 v0.9.1
 	gopkg.in/mgo.v2 v2.0.0-20160818020120-3f83fa500528
 	gopkg.in/yaml.v2 v2.2.4
 	gotest.tools v2.2.0+incompatible // indirect
 	howett.net/plist v0.0.0-20181124034731-591f970eefbb
-	k8s.io/api v0.0.0-20191206001707-7edad22604e1
-	k8s.io/apimachinery v0.0.0-20191203211716-adc6f4cd9e7d
-	k8s.io/client-go v10.0.0+incompatible
+	k8s.io/api v0.0.0-20190620084959-7cf5895f2711
+	k8s.io/apimachinery v0.0.0-20190719140911-bfcf53abc9f8
+	k8s.io/client-go v0.0.0-00010101000000-000000000000
 )
 
 replace (
