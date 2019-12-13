@@ -43,8 +43,8 @@ PKG_BUILD_DIR?=$(BUILD_DIR)/package${PKG_SUFFIX}
 PKG_UPLOAD_DIR?=$(BUILD_DIR)/upload
 COVERAGE_DIR?=${BUILD_DIR}/coverage
 COVERAGE_TOOL?=${BEAT_GOPATH}/bin/gotestcover
-COVERAGE_TOOL_REPO?=github.com/elastic/beats/vendor/github.com/pierrre/gotestcover
-TESTIFY_TOOL_REPO?=github.com/elastic/beats/vendor/github.com/stretchr/testify/assert
+COVERAGE_TOOL_REPO?=github.com/pierrre/gotestcover
+TESTIFY_TOOL_REPO?=github.com/stretchr/testify/assert
 NOW=$(shell date -u '+%Y-%m-%dT%H:%M:%SZ')
 GOBUILD_FLAGS?=-ldflags "-X github.com/elastic/beats/libbeat/version.buildTime=$(NOW) -X github.com/elastic/beats/libbeat/version.commit=$(COMMIT_ID)"
 GOIMPORTS=goimports
@@ -166,9 +166,9 @@ ci:  ## @build Shortcut for continuous integration. This should always run befor
 prepare-tests:
 	mkdir -p ${COVERAGE_DIR}
 	# gotestcover is needed to fetch coverage for multiple packages
-	@go get ${COVERAGE_TOOL_REPO}
+	@go install -mod=vendor ${COVERAGE_TOOL_REPO}
 	# testify is needed for unit and integration tests
-	@go get ${TESTIFY_TOOL_REPO}
+	@go install -mod=vendor ${TESTIFY_TOOL_REPO}
 
 .PHONY: unit-tests
 unit-tests: ## @testing Runs the unit tests with coverage.  Race is not enabled for unit tests because tests run much slower.

@@ -311,6 +311,8 @@ github.com/ph/goformation v0.0.0-20181029154158-c5f655c41370 h1:j6nv281ElfTPv2Gw
 github.com/ph/goformation v0.0.0-20181029154158-c5f655c41370/go.mod h1:wVJAhvjVglQIjoXPjFXU/5yZLak1OaITUllExuSZGkg=
 github.com/pierrec/lz4 v2.2.6+incompatible h1:6aCX4/YZ9v8q69hTyiR7dNLnTA3fgtKHVVW5BCd5Znw=
 github.com/pierrec/lz4 v2.2.6+incompatible/go.mod h1:pdkljMzZIN41W+lC3N2tnIh5sFi+IEE17M5jbnwPHcY=
+github.com/pierrre/gotestcover v0.0.0-20160113212533-7b94f124d338 h1:/VAZ3an4jHXs+61iNHugNR1mG25MSpaxtMnwOJVEAQM=
+github.com/pierrre/gotestcover v0.0.0-20160113212533-7b94f124d338/go.mod h1:4xpMLz7RBWyB+ElzHu8Llua96TRCB3YwX+l5EP1wmHk=
 github.com/pkg/errors v0.0.0-20170316201538-ff09b135c25a h1:wJ8mL5Lj13kTUhKlQitC4+gqMyiuy+2anApUMuvfLq0=
 github.com/pkg/errors v0.0.0-20170316201538-ff09b135c25a/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v0.0.0-20151028094244-d8ed2627bdf0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=

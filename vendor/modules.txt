@@ -402,6 +402,8 @@ github.com/opencontainers/image-spec/specs-go/v1
 # github.com/pierrec/lz4 v2.2.6+incompatible
 github.com/pierrec/lz4
 github.com/pierrec/lz4/internal/xxh32
+# github.com/pierrre/gotestcover v0.0.0-20160113212533-7b94f124d338
+github.com/pierrre/gotestcover
 # github.com/pkg/errors v0.8.1 => github.com/pkg/errors v0.0.0-20170316201538-ff09b135c25a
 github.com/pkg/errors
 # github.com/pmezard/go-difflib v1.0.0
