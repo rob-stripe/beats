@@ -105,7 +105,7 @@ def gather_dependencies(vendor_dir, overrides=None):
 
         # don't walk down into another vendor dir
         if "vendor" in dirs:
-                dirs.remove("vendor")
+            dirs.remove("vendor")
 
     return dependencies
 
