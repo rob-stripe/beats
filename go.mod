@@ -111,9 +111,9 @@ require (
 	golang.org/x/sys v0.0.0-20191025021431-6c3a3bfe00ae
 	golang.org/x/text v0.3.2
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0
-	golang.org/x/tools v0.0.0-20190506145303-2d16b83fe98c
+	golang.org/x/tools v0.0.0-20190621195816-6e04913cbbac
 	google.golang.org/api v0.6.0
-	gopkg.in/goracle.v2 v2.0.0-20190530184054-3222d7159b45
+	gopkg.in/goracle.v2 v2.24.1
 	gopkg.in/inf.v0 v0.9.1
 	gopkg.in/mgo.v2 v2.0.0-20160818020120-3f83fa500528
 	gopkg.in/yaml.v2 v2.2.4
@@ -185,7 +185,6 @@ replace (
 	golang.org/x/time => golang.org/x/time v0.0.0-20180314180208-26559e0f760e
 	google.golang.org/api => google.golang.org/api v0.0.0-20190624191751-02490b97dff7
 	google.golang.org/genproto => google.golang.org/genproto v0.0.0-20190611190212-a7e196e89fd3
-	gopkg.in/goracle.v2 => gopkg.in/goracle.v2 v2.0.0-20190530184054-3222d7159b45
 	gopkg.in/inf.v0 => gopkg.in/inf.v0 v0.0.0-20150911125757-3887ee99ecf0
 	gopkg.in/yaml.v2 => gopkg.in/yaml.v2 v2.0.0-20180328195020-5420a8b6744d
 	howett.net/plist => howett.net/plist v0.0.0-20171105004507-233df3c4f07b
