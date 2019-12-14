@@ -289,6 +289,8 @@ github.com/go-sql-driver/mysql
 github.com/gocarina/gocsv
 # github.com/godbus/dbus v0.0.0-00010101000000-000000000000 => github.com/godbus/dbus/v5 v5.0.0-20190930202911-37bf87eef99d
 github.com/godbus/dbus
+# github.com/godror/godror v0.9.1
+github.com/godror/godror
 # github.com/gofrs/uuid v3.1.0+incompatible
 github.com/gofrs/uuid
 # github.com/gogo/protobuf v1.0.0
@@ -634,7 +636,7 @@ golang.org/x/tools/internal/gopathwalk
 golang.org/x/tools/internal/imports
 golang.org/x/tools/internal/module
 golang.org/x/tools/internal/semver
-# golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7
+# golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
 golang.org/x/xerrors
 golang.org/x/xerrors/internal
 # google.golang.org/api v0.6.0 => google.golang.org/api v0.0.0-20190624191751-02490b97dff7
@@ -712,8 +714,6 @@ google.golang.org/grpc/resolver/passthrough
 google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
-# gopkg.in/goracle.v2 v2.24.1
-gopkg.in/goracle.v2
 # gopkg.in/inf.v0 v0.9.1 => gopkg.in/inf.v0 v0.0.0-20150911125757-3887ee99ecf0
 gopkg.in/inf.v0
 # gopkg.in/jcmturner/aescts.v1 v1.0.1

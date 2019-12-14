@@ -1677,6 +1677,15 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 --------------------------------------------------------------------
+Dependency: github.com/godror/godror
+Version: v0.9.1
+License type (autodetected): Apache-2.0
+./vendor/github.com/godror/godror/LICENSE.md:
+--------------------------------------------------------------------
+Apache License 2.0
+
+
+--------------------------------------------------------------------
 Dependency: github.com/gofrs/uuid
 Version: v3.1.0
 License type (autodetected): MIT
@@ -4491,7 +4500,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 --------------------------------------------------------------------
 Dependency: golang.org/x/xerrors
-Revision: a985d3407aa7
+Revision: 9bdfabe68543
 License type (autodetected): BSD-3-Clause
 ./vendor/golang.org/x/xerrors/LICENSE:
 --------------------------------------------------------------------
@@ -4580,15 +4589,6 @@ Dependency: google.golang.org/grpc
 Version: v1.20.1
 License type (autodetected): Apache-2.0
 ./vendor/google.golang.org/grpc/LICENSE:
---------------------------------------------------------------------
-Apache License 2.0
-
-
---------------------------------------------------------------------
-Dependency: gopkg.in/goracle.v2
-Version: v2.24.1
-License type (autodetected): Apache-2.0
-./vendor/gopkg.in/goracle.v2/LICENSE.md:
 --------------------------------------------------------------------
 Apache License 2.0
 

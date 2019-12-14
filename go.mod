@@ -60,11 +60,11 @@ require (
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gocarina/gocsv v0.0.0-20170324095351-ffef3ffc77be
 	github.com/godbus/dbus v0.0.0-00010101000000-000000000000 // indirect
+	github.com/godror/godror v0.9.1
 	github.com/gofrs/uuid v3.1.0+incompatible
 	github.com/golang/protobuf v1.3.2
 	github.com/golang/snappy v0.0.1
 	github.com/google/flatbuffers v1.11.0
-	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/gopacket v1.1.16
 	github.com/gorhill/cronexpr v0.0.0-20161205141322-d520615e531a
 	github.com/gorilla/mux v1.7.3 // indirect
@@ -113,7 +113,6 @@ require (
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0
 	golang.org/x/tools v0.0.0-20190621195816-6e04913cbbac
 	google.golang.org/api v0.6.0
-	gopkg.in/goracle.v2 v2.24.1
 	gopkg.in/inf.v0 v0.9.1
 	gopkg.in/mgo.v2 v2.0.0-20160818020120-3f83fa500528
 	gopkg.in/yaml.v2 v2.2.4
