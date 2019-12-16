@@ -229,7 +229,7 @@ github.com/elastic/go-structform/internal/unsafe
 github.com/elastic/go-structform/json
 github.com/elastic/go-structform/ubjson
 github.com/elastic/go-structform/visitors
-# github.com/elastic/go-sysinfo v1.1.1 => github.com/elastic/go-sysinfo v0.0.0-20190822164440-51d9d1362d77
+# github.com/elastic/go-sysinfo v1.2.0
 github.com/elastic/go-sysinfo
 github.com/elastic/go-sysinfo/internal/registry
 github.com/elastic/go-sysinfo/providers/darwin

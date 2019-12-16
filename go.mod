@@ -47,7 +47,7 @@ require (
 	github.com/elastic/go-perf v0.0.0-20191212140718-9c656876f595
 	github.com/elastic/go-seccomp-bpf v1.1.0
 	github.com/elastic/go-structform v0.0.6
-	github.com/elastic/go-sysinfo v1.1.1
+	github.com/elastic/go-sysinfo v1.2.0
 	github.com/elastic/go-txfile v0.0.6
 	github.com/elastic/go-ucfg v0.7.0
 	github.com/elastic/gosigar v0.10.5
@@ -78,6 +78,7 @@ require (
 	github.com/mattn/go-colorable v0.1.4
 	github.com/mattn/go-isatty v0.0.10 // indirect
 	github.com/miekg/dns v1.1.15
+	github.com/mitchellh/gox v1.0.1 // indirect
 	github.com/mitchellh/hashstructure v1.0.0
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/morikuni/aec v1.0.0 // indirect
@@ -140,7 +141,6 @@ replace (
 	github.com/docker/go-connections => github.com/docker/go-connections v0.0.0-20170623203643-3ede32e2033d
 	github.com/docker/go-units => github.com/docker/go-units v0.0.0-20170127095129-0dadbb0345b3
 	github.com/dop251/goja => github.com/andrewkroh/goja v0.0.0-20190128172624-dd2ac4456e20
-	github.com/elastic/go-sysinfo => github.com/elastic/go-sysinfo v0.0.0-20190822164440-51d9d1362d77
 	github.com/fsnotify/fsevents => github.com/elastic/fsevents v0.0.0-20181029231046-e1d381a4d270
 	github.com/fsnotify/fsnotify => github.com/adriansr/fsnotify v0.0.0-20180417234312-c9bbe1f46f1d
 	github.com/godbus/dbus => github.com/godbus/dbus/v5 v5.0.0-20190930202911-37bf87eef99d
