@@ -78,7 +78,7 @@ require (
 	github.com/mattn/go-colorable v0.1.4
 	github.com/mattn/go-isatty v0.0.10 // indirect
 	github.com/miekg/dns v1.1.15
-	github.com/mitchellh/gox v1.0.1 // indirect
+	github.com/mitchellh/gox v1.0.1
 	github.com/mitchellh/hashstructure v1.0.0
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/morikuni/aec v1.0.0 // indirect
