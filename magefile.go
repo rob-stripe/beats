@@ -149,3 +149,8 @@ func CheckLicenseHeaders() error {
 func DumpVariables() error {
 	return devtools.DumpVariables()
 }
+
+// Vendor vendors deps using go modules.
+func Vendor() error {
+	return devtools.Vendor()
+}
