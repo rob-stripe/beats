@@ -173,17 +173,17 @@ prepare-tests:
 .PHONY: unit-tests
 unit-tests: ## @testing Runs the unit tests with coverage.  Race is not enabled for unit tests because tests run much slower.
 unit-tests: prepare-tests
-	$(COVERAGE_TOOL) $(RACE) -mod=vendor -coverprofile=${COVERAGE_DIR}/unit.cov  ${GOPACKAGES}
+	$(COVERAGE_TOOL) $(RACE) -coverprofile=${COVERAGE_DIR}/unit.cov  ${GOPACKAGES}
 
 .PHONY: unit
 unit: ## @testing Runs the unit tests without coverage reports.
-	go test $(RACE) ${GOPACKAGES}
+	go test -mod=vendor $(RACE) ${GOPACKAGES}
 
 .PHONY: integration-tests
 integration-tests: ## @testing Run integration tests. Unit tests are run as part of the integration tests.
 integration-tests: prepare-tests
 	rm -f docker-compose.yml.lock
-	$(COVERAGE_TOOL) -tags=integration $(RACE) -mod=vendor -coverprofile=${COVERAGE_DIR}/integration.cov ${GOPACKAGES}
+	$(COVERAGE_TOOL) -tags=integration $(RACE) -coverprofile=${COVERAGE_DIR}/integration.cov ${GOPACKAGES}
 
 #
 .PHONY: integration-tests-environment
