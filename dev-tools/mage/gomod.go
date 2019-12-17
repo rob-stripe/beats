@@ -68,8 +68,11 @@ func Vendor() error {
 		return err
 	}
 
-	// TODO
-	vendorFolder := filepath.Join(CWD(), "vendor")
+	repo, err := GetProjectRepoInfo()
+	if err != nil {
+		return err
+	}
+	vendorFolder := filepath.Join(repo.RootDir, "vendor")
 
 	// copy packages which require the whole tree
 	for _, p := range copyAll {
