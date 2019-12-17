@@ -67,7 +67,7 @@ coverage-report:
 	@echo "Generated coverage report $(COVERAGE_DIR)/full.html"
 
 .PHONY: update
-update: notice
+update: vendor notice
 	@$(foreach var,$(PROJECTS) $(PROJECTS_XPACK_MAGE),$(MAKE) -C $(var) update || exit 1;)
 	@$(MAKE) -C deploy/kubernetes all
 
@@ -136,6 +136,11 @@ docs:
 notice: python-env
 	@echo "Generating NOTICE"
 	@$(PYTHON_ENV)/bin/python dev-tools/generate_notice.py .
+
+.PHONY: vendor
+vendor:
+	@echo "Getting and cleaning up dependencies"
+	@mage vendor
 
 # Sets up the virtual python environment
 .PHONY: python-env

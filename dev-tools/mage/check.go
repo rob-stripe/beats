@@ -48,7 +48,7 @@ import (
 func Check() error {
 	fmt.Println(">> check: Checking source code for common problems")
 
-	mg.Deps(GoVet, CheckNosetestsNotExecutable, CheckYAMLNotExecutable, CheckDashboardsFormat, Vendor)
+	mg.Deps(GoVet, CheckNosetestsNotExecutable, CheckYAMLNotExecutable, CheckDashboardsFormat)
 
 	changes, err := GitDiffIndex()
 	if err != nil {
